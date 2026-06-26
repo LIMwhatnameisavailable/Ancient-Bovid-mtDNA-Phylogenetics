@@ -243,14 +243,6 @@ Reference sequences were compiled from the following publications:
 
 ---
 
-## 👤 Author
-
-**LIMwhatnameisavailable**
-Southeast University · Institute of Vertebrate Paleontology and Paleoanthropology (IVPP), CAS
-ORCID: [0009-0009-8876-0154](https://orcid.org/0009-0009-8876-0154)
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
