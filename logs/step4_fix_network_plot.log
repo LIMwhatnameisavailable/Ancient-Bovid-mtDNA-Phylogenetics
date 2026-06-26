@@ -1,0 +1,13 @@
+[2026-06-21 14:38] FIX: Fig8 haplotype network node stacking
+  - Problem: 15 haplotypes crammed into -1.8..1.8 coordinate space, labels stacked on top of nodes
+  - Fixes applied:
+    1. Figure size: 10x10 -> 16x16
+    2. Axis limits: -1.8..1.8 -> -3.0..3.0
+    3. Layout scale: 2.2x expansion factor
+    4. Repulsion-based label placement (labels pushed away from all other haplotypes)
+    5. Connection lines from nodes to offset labels
+    6. Edge mutation-step labels offset perpendicularly from edge midpoints
+    7. Dynamic text alignment based on label direction
+    8. Reduced node radius for better proportion
+  - Files: step4_plot_network.py
+  - Status: DONE - figure now readable with clear node separation

@@ -1,0 +1,36 @@
+============================================================
+形态-线粒体谱系不一致性检查（remove_lowQ 精细树）
+Generated: 2026-06-21 13:29:57
+============================================================
+
+Total sequences in tree: 63 (14 WJD + 49 ref)
+Best model: TIM2+F+I+G4
+Tree file: /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/remove_lowQ_tree.treefile
+Alignment: 04_align/remove_lowQ_trimmed.fasta
+
+────────────────────────────────────────────────────────────
+Z9863 (先验=普通牛, 覆盖度81.5×, MID)
+────────────────────────────────────────────────────────────
+  Tree position: yak lineage
+  ⚠ DISCORDANT: Morphology=cattle but mtDNA=yak lineage
+  → 与 Step 2c 及原 Step 3 精细树一致
+  Clade BS: 43
+  Clade members: ['CORE_Bbub_outgroup2_NC006295', 'CORE_Bind_T1_NC005971', 'K0909', 'K0914', 'LIT1_Bgru_YakA_BG67', 'LIT2_Bgru_YakX_AG036', 'LIT2_Bgru_YakX_BS791', 'LIT2_Bgru_YakX_UP174', 'LIT2_Bgru_YakX_UP175', 'LIT2_Bgru_YakX_UP193', 'LIT2_Bgru_YakX_UP199', 'LIT2_Bgru_YakX_UP203', 'LIT3_Bpri_P_England_GU985279', 'LIT3_Bpri_P_Poland_JQ437479', 'LIT3_Btau_P1a_Korea_DQ124389', 'LIT3_Btau_P1a_LC537308', 'LIT3_Btau_P1a_LC537309', 'LIT3_Btau_P1a_LC537310', 'LIT3_Btau_P1a_LC537311', 'LIT3_Btau_P1a_LC537312', 'LIT3_Btau_P1a_LC537313', 'LIT3_Btau_P1a_LC537314', 'LIT3_Btau_P1a_LC537315', 'LIT3_Btau_P1a_LC537316', 'LIT3_Btau_P1a_LC537317', 'LIT4_Bpri_C_HH13C', 'LIT4_Bpri_C_HT07C', 'LIT4_Bpri_C_ST07C', 'LIT4_Bpri_C_ST08C', 'LIT4_Bpri_C_ST09C', 'LIT4_Bpri_C_YGZ02C', 'LIT4_Btau-Bpri_C_XH10C_hybrid', 'LIT4_Btau_T1_NJ26C', 'LIT4_Btau_T3_BY02C', 'LIT4_Btau_T3_CNN13', 'LIT4_Btau_T3_DSG04C', 'LIT4_Btau_T3_DSQN19', 'LIT4_Btau_T3_DSQN4', 'LIT4_Btau_T3_NJ09C', 'LIT4_Btau_T3_XH08C', 'MOD_Bmut_yak_KM233417', 'MOD_Bmut_yak_KR106993', 'MOD_Bmut_yak_KY829451', 'MOD_Bmut_yak_MK033130', 'MOD_Bmut_yak_NC025563', 'MOD_Btau_T3_OQ513044', 'MOD_Btau_T3_OQ513045', 'MOD_Btau_T3_OQ513046', 'MOD_Btau_T3_OQ513047', 'MOD_Btau_T3_OQ513048', 'REF_Scaf_outgroup_NC020617', 'Z9850', 'Z9851', 'Z9852', 'Z9854', 'Z9855', 'Z9856', 'Z9857', 'Z9858', 'Z9860', 'Z9861', 'Z9863', 'Z9867']
+
+────────────────────────────────────────────────────────────
+Z9867 (先验=牦牛, 覆盖度109.9×, HIGH)
+────────────────────────────────────────────────────────────
+  Tree position: yak lineage
+  Clade BS: 99
+  Clade members: ['CORE_Bbub_outgroup2_NC006295', 'CORE_Bind_T1_NC005971', 'K0909', 'K0914', 'LIT1_Bgru_YakA_BG67', 'LIT2_Bgru_YakX_AG036', 'LIT2_Bgru_YakX_BS791', 'LIT2_Bgru_YakX_UP174', 'LIT2_Bgru_YakX_UP175', 'LIT2_Bgru_YakX_UP193', 'LIT2_Bgru_YakX_UP199', 'LIT2_Bgru_YakX_UP203', 'LIT3_Bpri_P_England_GU985279', 'LIT3_Bpri_P_Poland_JQ437479', 'LIT3_Btau_P1a_Korea_DQ124389', 'LIT3_Btau_P1a_LC537308', 'LIT3_Btau_P1a_LC537309', 'LIT3_Btau_P1a_LC537310', 'LIT3_Btau_P1a_LC537311', 'LIT3_Btau_P1a_LC537312', 'LIT3_Btau_P1a_LC537313', 'LIT3_Btau_P1a_LC537314', 'LIT3_Btau_P1a_LC537315', 'LIT3_Btau_P1a_LC537316', 'LIT3_Btau_P1a_LC537317', 'LIT4_Bpri_C_HH13C', 'LIT4_Bpri_C_HT07C', 'LIT4_Bpri_C_ST07C', 'LIT4_Bpri_C_ST08C', 'LIT4_Bpri_C_ST09C', 'LIT4_Bpri_C_YGZ02C', 'LIT4_Btau-Bpri_C_XH10C_hybrid', 'LIT4_Btau_T1_NJ26C', 'LIT4_Btau_T3_BY02C', 'LIT4_Btau_T3_CNN13', 'LIT4_Btau_T3_DSG04C', 'LIT4_Btau_T3_DSQN19', 'LIT4_Btau_T3_DSQN4', 'LIT4_Btau_T3_NJ09C', 'LIT4_Btau_T3_XH08C', 'MOD_Bmut_yak_KM233417', 'MOD_Bmut_yak_KR106993', 'MOD_Bmut_yak_KY829451', 'MOD_Bmut_yak_MK033130', 'MOD_Bmut_yak_NC025563', 'MOD_Btau_T3_OQ513044', 'MOD_Btau_T3_OQ513045', 'MOD_Btau_T3_OQ513046', 'MOD_Btau_T3_OQ513047', 'MOD_Btau_T3_OQ513048', 'REF_Scaf_outgroup_NC020617', 'Z9850', 'Z9851', 'Z9852', 'Z9854', 'Z9855', 'Z9856', 'Z9857', 'Z9858', 'Z9860', 'Z9861', 'Z9863', 'Z9867']
+
+────────────────────────────────────────────────────────────
+Removed low-quality samples
+────────────────────────────────────────────────────────────
+  WJD QC caution: Z9853 (2.1×), Z9859 (21.2×), Z9864 (10.9×), Z9865 (21.9×)
+  LIT2 lowQ: LIT2_Bgru_YakX_AG018_lowQ (9.68×), LIT2_Bgru_YakX_AG028_lowQ (3.92×)
+
+────────────────────────────────────────────────────────────
+Outgroup check
+────────────────────────────────────────────────────────────
+  Both outgroups present ✅

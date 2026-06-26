@@ -1,0 +1,38 @@
+# Step 1 · 参考序列下载 — 操作日志
+# 时间: 2026-06-18
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 输入
+  - 来源: NCBI Nucleotide (E-utils API, 非 blastn -remote)
+  - 下载方式: curl → efetch, rettype=fasta
+
+## 输出
+
+### 1. 核心参考 (02_ref/core/) — 4 条
+  Bos_mutus_NC006380      — 16,323 bp   (牦牛)
+  Bos_taurus_NC006853     — 16,338 bp   (普通牛)
+  Bos_indicus_NC005971    — 16,341 bp   (瘤牛)  ← 修正后正确RefSeq
+  Bubalus_bubalis_NC006295 — 16,359 bp  (水牛外群)
+  注: 原 ANALYSIS_STEPS.md 中指示 NC_007575.1 实际为 Sulfurimonas
+      denitrificans 基因组，已修正为 NC_005971.1 (Bos indicus 线粒体)
+
+### 2. 现代面板 (02_ref/panel_modern/) — 10 条
+  Bos mutus × 5:
+    NC_025563.1 (16,322 bp), MK033130.1 (16,323 bp),
+    KY829451.1 (16,325 bp), KR106993.1 (16,322 bp),
+    KM233417.1 (16,322 bp)
+  Bos taurus × 5:
+    OQ513048.1 (16,339 bp), OQ513047.1 (16,340 bp),
+    OQ513046.1 (16,339 bp), OQ513045.1 (16,339 bp),
+    OQ513044.1 (16,341 bp)
+
+### 3. 古代面板 (02_ref/panel_ancient/) — 暂未下载
+  已建立候选列表: candidate_list.txt
+  待夏浚桓确认后手动下载
+
+### 4. 元数据
+  logs/ref_accession_map.csv — 14 条记录 (4 core + 10 panel_modern)
+
+## 状态
+  DONE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

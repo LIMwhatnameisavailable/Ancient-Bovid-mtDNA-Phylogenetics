@@ -1,0 +1,435 @@
+IQ-TREE 2.3.6 built Dec 11 2024
+
+Input file name: remove_lowQ_trimmed.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 42
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 63 sequences with 16338 nucleotide sites
+Number of constant sites: 13161 (= 80.5545% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 13161 (= 80.5545% of all sites)
+Number of parsimony informative sites: 1998
+Number of distinct site patterns: 1188
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM2+F+I+G4      -43058.185   86378.369 +    0.952   86380.503 +    0.953   87387.233 +    0.951
+TPM2u+F+I+G4     -43066.011   86392.022 -  0.00103   86394.124 -  0.00105   87393.184 -   0.0485
+TN+F+I+G4        -43073.547   86407.093 - 5.51e-07   86409.195 - 5.61e-07   87408.255 - 2.59e-05
+GTR+F+I+G4       -43059.191   86384.383 -   0.0471   86386.582 -   0.0456   87408.649 - 2.13e-05
+HKY+F+I+G4       -43080.952   86419.905 -  9.1e-10   86421.974 - 9.42e-10   87413.366 - 2.01e-06
+TVM+F+I+G4       -43067.256   86398.513 - 4.02e-05   86400.680 - 3.96e-05   87415.078 - 8.55e-07
+TIM+F+I+G4       -43074.448   86410.896 - 8.23e-08   86413.030 - 8.25e-08   87419.759 - 8.23e-08
+TIM3+F+I+G4      -43075.623   86413.245 - 2.54e-08   86415.379 - 2.55e-08   87422.109 - 2.54e-08
+K3Pu+F+I+G4      -43081.393   86422.787 - 2.15e-10   86424.888 - 2.19e-10   87423.949 - 1.01e-08
+TPM3u+F+I+G4     -43081.651   86423.302 - 1.67e-10   86425.403 -  1.7e-10   87424.464 - 7.83e-09
+GTR+F+G4         -43086.881   86437.763 - 1.21e-13   86439.929 - 1.19e-13   87454.328 - 2.56e-15
+GTR+F+I          -43093.579   86451.158 - 1.49e-16   86453.325 - 1.47e-16   87467.723 - 3.16e-18
+TIM2e+I+G4       -44002.662   88261.325 -        0   88263.362 -        0   89247.085 -        0
+SYM+I+G4         -44002.943   88265.886 -        0   88267.987 -        0   89267.048 -        0
+TNe+I+G4         -44076.625   88407.249 -        0   88409.255 -        0   89385.308 -        0
+TIMe+I+G4        -44077.672   88411.344 -        0   88413.381 -        0   89397.104 -        0
+TIM3e+I+G4       -44078.644   88413.288 -        0   88415.325 -        0   89399.048 -        0
+TPM2+I+G4        -44107.444   88468.887 -        0   88470.893 -        0   89446.946 -        0
+TVMe+I+G4        -44108.685   88475.369 -        0   88477.439 -        0   89468.831 -        0
+GTR+F            -44145.717   88553.435 -        0   88555.569 -        0   89562.298 -        0
+K2P+I+G4         -44183.112   88618.223 -        0   88620.197 -        0   89588.581 -        0
+K3P+I+G4         -44183.422   88620.843 -        0   88622.849 -        0   89598.902 -        0
+TPM3+I+G4        -44183.890   88621.780 -        0   88623.786 -        0   89599.839 -        0
+F81+F+I+G4       -46577.409   93410.818 -        0   93412.856 -        0   94396.578 -        0
+JC+I+G4          -47403.866   95057.733 -        0   95059.676 -        0   96020.389 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+I+G4
+
+Rate parameter R:
+
+  A-C: 2.9888
+  A-G: 68.8747
+  A-T: 2.9888
+  C-G: 1.0000
+  C-T: 86.4337
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3349
+  pi(C) = 0.2594
+  pi(G) = 0.1338
+  pi(T) = 0.2719
+
+Rate matrix Q:
+
+  A   -0.5521   0.03961     0.471   0.04152
+  C   0.05115    -1.259  0.006839     1.201
+  G     1.179   0.01325    -1.206   0.01389
+  T   0.05115     1.146  0.006839    -1.204
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.604
+Gamma shape alpha: 0.7586
+
+ Category  Relative_rate  Proportion
+  0         0              0.604
+  1         0.219          0.09901
+  2         0.9846         0.09901
+  3         2.386          0.09901
+  4         6.511          0.09901
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -43052.4588 (s.e. 337.7572)
+Unconstrained log-likelihood (without tree): -51592.1037
+Number of free parameters (#branches + #model parameters): 131
+Akaike information criterion (AIC) score: 86366.9177
+Corrected Akaike information criterion (AICc) score: 86369.0517
+Bayesian information criterion (BIC) score: 87375.7813
+
+Total tree length (sum of branch lengths): 0.5251
+Sum of internal branch lengths: 0.3202 (60.9680% of tree length)
+
+WARNING: 20 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'REF_Scaf_outgroup_NC020617' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+                                                                             +--K0909
+                                                                          +--| (100)
+                                                                          |  +--Z9860
+                                                                       +**| (60)
+                                                                       |  |  +--Z9851
+                                                                       |  +--| (100)
+                                                                       |     +--MOD_Btau_T3_OQ513048
+                                                                    +**| (75)
+                                                                    |  |     +**Z9850
+                                                                    |  |  +--| (99)
+                                                                    |  |  |  +--Z9867
+                                                                    |  +**| (33)
+                                                                    |     |     +--MOD_Btau_T3_OQ513044
+                                                                    |     |  +--| (85)
+                                                                    |     |  |  +**MOD_Btau_T3_OQ513047
+                                                                    |     +--| (83)
+                                                                    |        +--MOD_Btau_T3_OQ513046
+                                                                 +**| (80)
+                                                                 |  +--LIT4_Btau_T3_XH08C
+                                                              +**| (96)
+                                                              |  |           +--Z9852
+                                                              |  |        +--| (88)
+                                                              |  |        |  +--Z9861
+                                                              |  |     +--| (59)
+                                                              |  |     |  +--Z9857
+                                                              |  |  +**| (94)
+                                                              |  |  |  +--LIT4_Btau_T3_DSQN19
+                                                              |  +--| (99)
+                                                              |     |        +--LIT4_Btau_T3_BY02C
+                                                              |     |     +**| (40)
+                                                              |     |     |  +--LIT4_Btau_T3_DSG04C
+                                                              |     |  +**| (43)
+                                                              |     |  |  +**LIT4_Btau_T3_CNN13
+                                                              |     +--| (98)
+                                                              |        +--LIT4_Btau_T3_DSQN4
+                                                           +--| (100)
+                                                           |  |  +--LIT4_Btau_T1_NJ26C
+                                                           |  +**| (81)
+                                                           |     |  +--LIT4_Btau_T3_NJ09C
+                                                           |     +--| (99)
+                                                           |        +--MOD_Btau_T3_OQ513045
+                                                        +--| (100)
+                                                        |  |     +--LIT3_Bpri_P_England_GU985279
+                                                        |  |  +--| (97)
+                                                        |  |  |  |                 +--LIT3_Btau_P1a_Korea_DQ124389
+                                                        |  |  |  |              +**| (19)
+                                                        |  |  |  |              |  +--LIT3_Btau_P1a_LC537313
+                                                        |  |  |  |           +**| (12)
+                                                        |  |  |  |           |  |  +--LIT3_Btau_P1a_LC537314
+                                                        |  |  |  |           |  +--| (95)
+                                                        |  |  |  |           |     +**LIT3_Btau_P1a_LC537316
+                                                        |  |  |  |        +**| (5)
+                                                        |  |  |  |        |  |  +--LIT3_Btau_P1a_LC537308
+                                                        |  |  |  |        |  +**| (16)
+                                                        |  |  |  |        |     |  +**LIT3_Btau_P1a_LC537310
+                                                        |  |  |  |        |     +--| (96)
+                                                        |  |  |  |        |        +**LIT3_Btau_P1a_LC537315
+                                                        |  |  |  |     +**| (14)
+                                                        |  |  |  |     |  |  +--LIT3_Btau_P1a_LC537311
+                                                        |  |  |  |     |  +--| (97)
+                                                        |  |  |  |     |     +**LIT3_Btau_P1a_LC537317
+                                                        |  |  |  |  +**| (98)
+                                                        |  |  |  |  |  +--LIT3_Btau_P1a_LC537312
+                                                        |  |  |  +--| (100)
+                                                        |  |  |     +**LIT3_Btau_P1a_LC537309
+                                                        |  +--| (100)
+                                                        |     +--LIT3_Bpri_P_Poland_JQ437479
+                                                     +--| (99)
+                                                     |  |     +--LIT4_Bpri_C_HH13C
+                                                     |  |  +--| (98)
+                                                     |  |  |  |           +--LIT4_Bpri_C_HT07C
+                                                     |  |  |  |        +--| (100)
+                                                     |  |  |  |        |  +--LIT4_Btau-Bpri_C_XH10C_hybrid
+                                                     |  |  |  |     +--| (100)
+                                                     |  |  |  |     |  +**LIT4_Bpri_C_ST09C
+                                                     |  |  |  |  +--| (100)
+                                                     |  |  |  |  |  +--LIT4_Bpri_C_YGZ02C
+                                                     |  |  |  +--| (99)
+                                                     |  |  |     +--LIT4_Bpri_C_ST08C
+                                                     |  +--| (100)
+                                                     |     +--LIT4_Bpri_C_ST07C
+                                              +------| (100)
+                                              |      +--CORE_Bind_T1_NC005971
++---------------------------------------------| (100)
+|                                             |             +--K0914
+|                                             |          +--| (100)
+|                                             |          |  |           +--LIT2_Bgru_YakX_AG036
+|                                             |          |  |        +--| (97)
+|                                             |          |  |        |  +--LIT2_Bgru_YakX_UP175
+|                                             |          |  |     +--| (99)
+|                                             |          |  |     |  |  +--LIT2_Bgru_YakX_UP174
+|                                             |          |  |     |  +--| (99)
+|                                             |          |  |     |     +--LIT2_Bgru_YakX_UP203
+|                                             |          |  |  +--| (100)
+|                                             |          |  |  |  +--LIT2_Bgru_YakX_UP199
+|                                             |          |  +--| (100)
+|                                             |          |     |  +--LIT2_Bgru_YakX_BS791
+|                                             |          |     +--| (95)
+|                                             |          |        +--LIT2_Bgru_YakX_UP193
+|                                             |       +--| (67)
+|                                             |       |  |  +--Z9855
+|                                             |       |  +--| (75)
+|                                             |       |     |  +**MOD_Bmut_yak_KM233417
+|                                             |       |     +--| (100)
+|                                             |       |        +**MOD_Bmut_yak_NC025563
+|                                             |    +--| (100)
+|                                             |    |  |           +**Z9854
+|                                             |    |  |        +**| (50)
+|                                             |    |  |        |  |  +**Z9856
+|                                             |    |  |        |  +**| (48)
+|                                             |    |  |        |     |  +--Z9863
+|                                             |    |  |        |     +**| (43)
+|                                             |    |  |        |        +--MOD_Bmut_yak_MK033130
+|                                             |    |  |     +--| (98)
+|                                             |    |  |     |  +--Z9858
+|                                             |    |  |  +**| (58)
+|                                             |    |  |  |  +--MOD_Bmut_yak_KY829451
+|                                             |    |  +**| (88)
+|                                             |    |     +--MOD_Bmut_yak_KR106993
+|                                             +----| (93)
+|                                                  +--LIT1_Bgru_YakA_BG67
+|
++-------------------CORE_Bbub_outgroup2_NC006295
+|
++-----------------REF_Scaf_outgroup_NC020617
+
+Tree in newick format:
+
+(((((((((((K0909:0.0001231724,Z9860:0.0000615233)100:0.0004943494,(Z9851:0.0001846599,MOD_Btau_T3_OQ513048:0.0002461596)100:0.0003088373)60:0.0000010012,((Z9850:0.0000010012,Z9867:0.0000621248)99:0.0001838031,((MOD_Btau_T3_OQ513044:0.0000614575,MOD_Btau_T3_OQ513047:0.0000010012)85:0.0001229915,MOD_Btau_T3_OQ513046:0.0001846115)83:0.0001227268)33:0.0000010012)75:0.0000010012,LIT4_Btau_T3_XH08C:0.0000616255)80:0.0000597084,((((Z9852:0.0001230189,Z9861:0.0001260366)88:0.0000614308,Z9857:0.0001232496)59:0.0000613411,LIT4_Btau_T3_DSQN19:0.0001841044)94:0.0000010012,(((LIT4_Btau_T3_BY02C:0.0002470239,LIT4_Btau_T3_DSG04C:0.0001227448)40:0.0000010012,LIT4_Btau_T3_CNN13:0.0000010012)43:0.0000010012,LIT4_Btau_T3_DSQN4:0.0000613517)98:0.0000613486)99:0.0001227478)96:0.0000608809,(LIT4_Btau_T1_NJ26C:0.0003086728,(LIT4_Btau_T3_NJ09C:0.0001842147,MOD_Btau_T3_OQ513045:0.0003706253)99:0.0002476829)81:0.0000010012)100:0.0016750284,((LIT3_Bpri_P_England_GU985279:0.0005573685,((((((LIT3_Btau_P1a_Korea_DQ124389:0.0001840331,LIT3_Btau_P1a_LC537313:0.0001226226)19:0.0000010012,(LIT3_Btau_P1a_LC537314:0.0001227713,LIT3_Btau_P1a_LC537316:0.0000010012)95:0.0000613027)12:0.0000010012,(LIT3_Btau_P1a_LC537308:0.0000612941,(LIT3_Btau_P1a_LC537310:0.0000010012,LIT3_Btau_P1a_LC537315:0.0000010012)96:0.0001226246)16:0.0000010012)5:0.0000010012,(LIT3_Btau_P1a_LC537311:0.0000613572,LIT3_Btau_P1a_LC537317:0.0000010012)97:0.0000612947)14:0.0000010012,LIT3_Btau_P1a_LC537312:0.0001840219)98:0.0000607080,LIT3_Btau_P1a_LC537309:0.0000028853)100:0.0004950152)97:0.0001823665,LIT3_Bpri_P_Poland_JQ437479:0.0003109782)100:0.0016503743)100:0.0021453313,((LIT4_Bpri_C_HH13C:0.0006231667,((((LIT4_Bpri_C_HT07C:0.0007319863,LIT4_Btau-Bpri_C_XH10C_hybrid:0.0000637292)100:0.0002841342,LIT4_Bpri_C_ST09C:0.0000010012)100:0.0000683937,LIT4_Bpri_C_YGZ02C:0.0003751058)100:0.0004882203,LIT4_Bpri_C_ST08C:0.0006209277)99:0.0001405512)98:0.0002328852,LIT4_Bpri_C_ST07C:0.0011375040)100:0.0024679175)99:0.0025655078,CORE_Bind_T1_NC005971:0.0098626032)100:0.0346991292,((((K0914:0.0026935272,((((LIT2_Bgru_YakX_AG036:0.0001903926,LIT2_Bgru_YakX_UP175:0.0002509442)97:0.0000612891,(LIT2_Bgru_YakX_UP174:0.0002504111,LIT2_Bgru_YakX_UP203:0.0006928260)99:0.0001879929)99:0.0003393165,LIT2_Bgru_YakX_UP199:0.0003519252)100:0.0009608975,(LIT2_Bgru_YakX_BS791:0.0007240155,LIT2_Bgru_YakX_UP193:0.0016205357)95:0.0003108833)100:0.0160599422)100:0.0024394053,(Z9855:0.0002720448,(MOD_Bmut_yak_KM233417:0.0000010012,MOD_Bmut_yak_NC025563:0.0000010012)100:0.0036737858)75:0.0001343801)67:0.0003023026,((((Z9854:0.0000010012,(Z9856:0.0000010012,(Z9863:0.0000662695,MOD_Bmut_yak_MK033130:0.0002057710)43:0.0000010012)48:0.0000010012)50:0.0000010012,Z9858:0.0000663505)98:0.0003799145,MOD_Bmut_yak_KY829451:0.0001322535)58:0.0000010012,MOD_Bmut_yak_KR106993:0.0001984756)88:0.0000020876)100:0.0169778406,LIT1_Bgru_YakA_BG67:0.0001075348)93:0.0239566971)100:0.2088424261,CORE_Bbub_outgroup2_NC006295:0.0931328106,REF_Scaf_outgroup_NC020617:0.0823430373);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -43053.147879
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+                                                                             +--K0909
+                                                                          +--| (100)
+                                                                          |  +--Z9860
+                                                                       +--| (60)
+                                                                       |  |  +--Z9851
+                                                                       |  +--| (100)
+                                                                       |     +--MOD_Btau_T3_OQ513048
+                                                                    +--| (75)
+                                                                    |  |     +--Z9850
+                                                                    |  |  +--| (99)
+                                                                    |  |  |  +--Z9867
+                                                                    |  +--| (33)
+                                                                    |     |     +--MOD_Btau_T3_OQ513044
+                                                                    |     |  +--| (85)
+                                                                    |     |  |  +--MOD_Btau_T3_OQ513047
+                                                                    |     +--| (83)
+                                                                    |        +--MOD_Btau_T3_OQ513046
+                                                                 +--| (80)
+                                                                 |  +--LIT4_Btau_T3_XH08C
+                                                              +--| (96)
+                                                              |  |           +--Z9852
+                                                              |  |        +--| (88)
+                                                              |  |        |  +--Z9861
+                                                              |  |     +--| (59)
+                                                              |  |     |  +--Z9857
+                                                              |  |  +--| (94)
+                                                              |  |  |  +--LIT4_Btau_T3_DSQN19
+                                                              |  +--| (99)
+                                                              |     |        +--LIT4_Btau_T3_BY02C
+                                                              |     |     +--| (40)
+                                                              |     |     |  +--LIT4_Btau_T3_DSG04C
+                                                              |     |  +--| (43)
+                                                              |     |  |  +--LIT4_Btau_T3_CNN13
+                                                              |     +--| (98)
+                                                              |        +--LIT4_Btau_T3_DSQN4
+                                                           +--| (100)
+                                                           |  |  +--LIT4_Btau_T1_NJ26C
+                                                           |  +--| (81)
+                                                           |     |  +--LIT4_Btau_T3_NJ09C
+                                                           |     +--| (99)
+                                                           |        +--MOD_Btau_T3_OQ513045
+                                                        +--| (100)
+                                                        |  |     +--LIT3_Bpri_P_England_GU985279
+                                                        |  |  +--| (97)
+                                                        |  |  |  |     +--LIT3_Btau_P1a_Korea_DQ124389
+                                                        |  |  |  |  +--| (98)
+                                                        |  |  |  |  |  |        +--LIT3_Btau_P1a_LC537308
+                                                        |  |  |  |  |  |     +--| (16)
+                                                        |  |  |  |  |  |     |  |  +--LIT3_Btau_P1a_LC537310
+                                                        |  |  |  |  |  |     |  +--| (96)
+                                                        |  |  |  |  |  |     |     +--LIT3_Btau_P1a_LC537315
+                                                        |  |  |  |  |  |  +--| (9)
+                                                        |  |  |  |  |  |  |  |  +--LIT3_Btau_P1a_LC537313
+                                                        |  |  |  |  |  |  |  +--| (18)
+                                                        |  |  |  |  |  |  |     |  +--LIT3_Btau_P1a_LC537314
+                                                        |  |  |  |  |  |  |     +--| (95)
+                                                        |  |  |  |  |  |  |        +--LIT3_Btau_P1a_LC537316
+                                                        |  |  |  |  |  +--| (31)
+                                                        |  |  |  |  |     |     +--LIT3_Btau_P1a_LC537311
+                                                        |  |  |  |  |     |  +--| (97)
+                                                        |  |  |  |  |     |  |  +--LIT3_Btau_P1a_LC537317
+                                                        |  |  |  |  |     +--| (25)
+                                                        |  |  |  |  |        +--LIT3_Btau_P1a_LC537312
+                                                        |  |  |  +--| (100)
+                                                        |  |  |     +--LIT3_Btau_P1a_LC537309
+                                                        |  +--| (100)
+                                                        |     +--LIT3_Bpri_P_Poland_JQ437479
+                                                     +--| (99)
+                                                     |  |     +--LIT4_Bpri_C_HH13C
+                                                     |  |  +--| (98)
+                                                     |  |  |  |           +--LIT4_Bpri_C_HT07C
+                                                     |  |  |  |        +--| (100)
+                                                     |  |  |  |        |  +--LIT4_Btau-Bpri_C_XH10C_hybrid
+                                                     |  |  |  |     +--| (100)
+                                                     |  |  |  |     |  +--LIT4_Bpri_C_ST09C
+                                                     |  |  |  |  +--| (100)
+                                                     |  |  |  |  |  +--LIT4_Bpri_C_YGZ02C
+                                                     |  |  |  +--| (99)
+                                                     |  |  |     +--LIT4_Bpri_C_ST08C
+                                                     |  +--| (100)
+                                                     |     +--LIT4_Bpri_C_ST07C
+                                              +------| (100)
+                                              |      +--CORE_Bind_T1_NC005971
++---------------------------------------------| (100)
+|                                             |             +--K0914
+|                                             |          +--| (100)
+|                                             |          |  |           +--LIT2_Bgru_YakX_AG036
+|                                             |          |  |        +--| (97)
+|                                             |          |  |        |  +--LIT2_Bgru_YakX_UP175
+|                                             |          |  |     +--| (99)
+|                                             |          |  |     |  |  +--LIT2_Bgru_YakX_UP174
+|                                             |          |  |     |  +--| (99)
+|                                             |          |  |     |     +--LIT2_Bgru_YakX_UP203
+|                                             |          |  |  +--| (100)
+|                                             |          |  |  |  +--LIT2_Bgru_YakX_UP199
+|                                             |          |  +--| (100)
+|                                             |          |     |  +--LIT2_Bgru_YakX_BS791
+|                                             |          |     +--| (95)
+|                                             |          |        +--LIT2_Bgru_YakX_UP193
+|                                             |       +--| (67)
+|                                             |       |  |  +--Z9855
+|                                             |       |  +--| (75)
+|                                             |       |     |  +--MOD_Bmut_yak_KM233417
+|                                             |       |     +--| (100)
+|                                             |       |        +--MOD_Bmut_yak_NC025563
+|                                             |    +--| (100)
+|                                             |    |  |           +--Z9854
+|                                             |    |  |        +--| (50)
+|                                             |    |  |        |  |  +--Z9856
+|                                             |    |  |        |  +--| (48)
+|                                             |    |  |        |     |  +--Z9863
+|                                             |    |  |        |     +--| (43)
+|                                             |    |  |        |        +--MOD_Bmut_yak_MK033130
+|                                             |    |  |     +--| (98)
+|                                             |    |  |     |  +--Z9858
+|                                             |    |  |  +--| (58)
+|                                             |    |  |  |  +--MOD_Bmut_yak_KY829451
+|                                             |    |  +--| (88)
+|                                             |    |     +--MOD_Bmut_yak_KR106993
+|                                             +----| (93)
+|                                                  +--LIT1_Bgru_YakA_BG67
+|
++-------------------CORE_Bbub_outgroup2_NC006295
+|
++-----------------REF_Scaf_outgroup_NC020617
+
+
+Consensus tree in newick format: 
+
+(((((((((((K0909:0.0001229788,Z9860:0.0000614278)100:0.0004938675,(Z9851:0.0001858533,MOD_Btau_T3_OQ513048:0.0002466567)100:0.0003085312)60:0.0000028817,((Z9850:0.0000028817,Z9867:0.0000620403)99:0.0001844643,((MOD_Btau_T3_OQ513044:0.0000613581,MOD_Btau_T3_OQ513047:0.0000028817)85:0.0001227931,MOD_Btau_T3_OQ513046:0.0001858133)83:0.0001236865)33:0.0000028817)75:0.0000528355,LIT4_Btau_T3_XH08C:0.0000615998)80:0.0000084526,((((Z9852:0.0001227969,Z9861:0.0001258702)88:0.0000618289,Z9857:0.0001235374)59:0.0000612995,LIT4_Btau_T3_DSQN19:0.0001849268)94:0.0000028817,(((LIT4_Btau_T3_BY02C:0.0002467866,LIT4_Btau_T3_DSG04C:0.0001226514)40:0.0000028817,LIT4_Btau_T3_CNN13:0.0000028817)43:0.0000028817,LIT4_Btau_T3_DSQN4:0.0000613091)98:0.0000613175)99:0.0001226461)96:0.0000589706,(LIT4_Btau_T1_NJ26C:0.0003083791,(LIT4_Btau_T3_NJ09C:0.0001853567,MOD_Btau_T3_OQ513045:0.0003702630)99:0.0002474477)81:0.0000028817)100:0.0016755646,((LIT3_Bpri_P_England_GU985279:0.0005568375,((LIT3_Btau_P1a_Korea_DQ124389:0.0001851785,(((LIT3_Btau_P1a_LC537308:0.0000612288,(LIT3_Btau_P1a_LC537310:0.0000028817,LIT3_Btau_P1a_LC537315:0.0000028817)96:0.0001225099)16:0.0000028817,(LIT3_Btau_P1a_LC537313:0.0001225006,(LIT3_Btau_P1a_LC537314:0.0001225299,LIT3_Btau_P1a_LC537316:0.0000028817)95:0.0000612392)18:0.0000028817)9:0.0000028817,((LIT3_Btau_P1a_LC537311:0.0000612328,LIT3_Btau_P1a_LC537317:0.0000028817)97:0.0000612296,LIT3_Btau_P1a_LC537312:0.0001851566)25:0.0000028817)31:0.0000028817)98:0.0000603510,LIT3_Btau_P1a_LC537309:0.0000028817)100:0.0004945491)97:0.0001825081,LIT3_Bpri_P_Poland_JQ437479:0.0003105315)100:0.0016518791)100:0.0021437239,((LIT4_Bpri_C_HH13C:0.0006225388,((((LIT4_Bpri_C_HT07C:0.0007323080,LIT4_Btau-Bpri_C_XH10C_hybrid:0.0000636830)100:0.0002844211,LIT4_Bpri_C_ST09C:0.0000028817)100:0.0000682039,LIT4_Bpri_C_YGZ02C:0.0003757037)100:0.0004875499,LIT4_Bpri_C_ST08C:0.0006203010)99:0.0001406165)98:0.0002333661,LIT4_Bpri_C_ST07C:0.0011375986)100:0.0024680955)99:0.0025707139,CORE_Bind_T1_NC005971:0.0098605418)100:0.0346393981,((((K0914:0.0026935222,((((LIT2_Bgru_YakX_AG036:0.0001915263,LIT2_Bgru_YakX_UP175:0.0002523901)97:0.0000622175,(LIT2_Bgru_YakX_UP174:0.0002518674,LIT2_Bgru_YakX_UP203:0.0006921971)99:0.0001889902)99:0.0003389636,LIT2_Bgru_YakX_UP199:0.0003520989)100:0.0009613135,(LIT2_Bgru_YakX_BS791:0.0007231833,LIT2_Bgru_YakX_UP193:0.0016196001)95:0.0003097603)100:0.0160617905)100:0.0024394650,(Z9855:0.0002725635,(MOD_Bmut_yak_KM233417:0.0000028817,MOD_Bmut_yak_NC025563:0.0000028817)100:0.0036734107)75:0.0001338540)67:0.0003027551,((((Z9854:0.0000028817,(Z9856:0.0000028817,(Z9863:0.0000663601,MOD_Bmut_yak_MK033130:0.0002046209)43:0.0000021968)48:0.0000021968)50:0.0000021968,Z9858:0.0000662779)98:0.0003768008,MOD_Bmut_yak_KY829451:0.0001331542)58:0.0000021968,MOD_Bmut_yak_KR106993:0.0001997719)88:0.0000027463)100:0.0169803457,LIT1_Bgru_YakA_BG67:0.0001081001)93:0.0240038855)100:0.2089065899,CORE_Bbub_outgroup2_NC006295:0.0931294212,REF_Scaf_outgroup_NC020617:0.0823772200);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ../05_phylo/remove_lowQ_tree.treefile -m "TIM2{2.98883,68.8747,86.4337}+F{0.334938,0.25937,0.13383,0.271861}+I{0.603977}+G4{0.758603}" --length 16338
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s remove_lowQ_trimmed.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s remove_lowQ_trimmed.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Jun 21 13:29:01 2026
+Total CPU time used: 809.634286 seconds (0h:13m:29s)
+Total wall-clock time used: 363.8436578 seconds (0h:6m:3s)
+

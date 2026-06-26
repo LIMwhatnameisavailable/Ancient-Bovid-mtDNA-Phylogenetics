@@ -1,0 +1,23 @@
+sample_id,subsite,morphology_id,morphology_confidence,mtDNA_clade,mtDNA_confidence,blast_top_species,prior_check,note
+K0909,西南塔遗址,牛,determinate,cattle,HIGH,Bos taurus,,
+K0914,西南塔遗址,牛,determinate,yak,HIGH,Bos grunniens,,
+Z9850,主遗址,牛?,UNCERTAIN,cattle,HIGH,Bos taurus,,形态鉴定不确定
+Z9851,主遗址,牛,determinate,cattle,HIGH,Bos taurus,,
+Z9852,主遗址,牛,determinate,cattle,HIGH,Bos taurus,,
+Z9853,主遗址,牛,determinate,yak,LOW,Bos grunniens,,LOW覆盖度2.1×; 29% gaps
+Z9854,主遗址,牛,determinate,yak,HIGH,Bos grunniens,,
+Z9855,主遗址,牛,determinate,yak,HIGH,Bos grunniens,,
+Z9856,主遗址,牛,determinate,yak,HIGH,Bos grunniens,,
+Z9857,主遗址,牛?,UNCERTAIN,cattle,HIGH,Bos taurus,,形态鉴定不确定
+Z9858,主遗址,牛,determinate,yak,HIGH,Bos grunniens,,
+Z9859,主遗址,牛?,UNCERTAIN,cattle,LOW,Bos taurus,,pident=97.09%; 形态鉴定不确定
+Z9860,主遗址,牛,determinate,cattle,HIGH,Bos taurus,,
+Z9861,主遗址,牛,determinate,cattle,HIGH,Bos taurus,,
+Z9863,主遗址,普通牛,PRIOR_CATTLE,yak,HIGH,Bos grunniens,不一致候选,⚠ 形态=普通牛 但 mtDNA clade=牦牛
+Z9864,主遗址,牛?,UNCERTAIN,cattle,MEDIUM,Bos taurus,,LOW覆盖度10.9×; 形态鉴定不确定
+Z9865,主遗址,牛,determinate,cattle,LOW,Bos taurus,,pident=96.27%
+Z9867,主遗址,牦牛,PRIOR_YAK,cattle,HIGH,Bos taurus,不一致候选,⚠ 形态=牦牛 但 mtDNA clade=普通牛
+Bos_mutus_NC006380,,,ref,yak,,,,
+Bos_taurus_NC006853,,,ref,cattle,,,,
+Bos_indicus_NC005971,,,ref,cattle,,,,
+Bubalus_bubalis_NC006295,,,ref,outgroup,,,,

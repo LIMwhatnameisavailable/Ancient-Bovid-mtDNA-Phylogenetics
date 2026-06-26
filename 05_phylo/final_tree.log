@@ -1,0 +1,251 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Dec 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    huang-P7920 (AVX512, FMA3, 251 GB RAM)
+Command: /mnt/disk2/srtp2024/miniconda3/bin/iqtree2 -s /mnt/disk2/srtp2024/LIM/IVPP/analysis/04_align/final_trimmed.fasta -m TEST -B 1000 -T AUTO -o REF_Scaf_outgroup_NC020617 --prefix /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree --seed 42 -redo
+Seed:    42 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun 21 00:52:37 2026
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file /mnt/disk2/srtp2024/LIM/IVPP/analysis/04_align/final_trimmed.fasta ... Fasta format detected
+Reading fasta file: done in 0.0138609 secs using 91.6% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 69 sequences with 16338 columns, 2140 distinct patterns
+2013 parsimony-informative, 1197 singleton sites, 13128 constant sites
+                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00598961 secs using 9003% CPU
+   1  K0909                            0.00%    passed     99.34%
+   2  K0914                            3.42%    passed     88.77%
+   3  Z9850                            0.00%    passed     99.40%
+   4  Z9851                            0.01%    passed     99.64%
+   5  Z9852                            0.00%    passed     99.62%
+   6  Z9853                           31.37%    failed      0.80%
+   7  Z9854                            3.38%    passed     88.96%
+   8  Z9855                            3.92%    passed     91.91%
+   9  Z9856                            4.11%    passed     97.26%
+  10  Z9857                            0.11%    passed     99.50%
+  11  Z9858                            3.72%    passed     94.38%
+  12  Z9859                            7.96%    passed     12.49%
+  13  Z9860                            0.57%    passed     96.56%
+  14  Z9861                            1.22%    passed     94.85%
+  15  Z9863                            3.53%    passed     91.93%
+  16  Z9864                            3.43%    passed     79.11%
+  17  Z9865                            7.28%    passed      8.78%
+  18  Z9867                            1.08%    passed     95.09%
+  19  CORE_Bbub_outgroup2_NC006295     0.10%    failed      0.33%
+  20  CORE_Bind_T1_NC005971            0.01%    passed     99.82%
+  21  LIT1_Bgru_YakA_BG67              3.94%    passed     62.29%
+  22  LIT2_Bgru_YakX_AG018_lowQ        6.10%    passed     23.99%
+  23  LIT2_Bgru_YakX_AG028_lowQ       29.59%    failed      0.01%
+  24  LIT2_Bgru_YakX_AG036             0.71%    passed     80.87%
+  25  LIT2_Bgru_YakX_BS791             0.23%    passed     83.80%
+  26  LIT2_Bgru_YakX_UP174             0.23%    passed     80.54%
+  27  LIT2_Bgru_YakX_UP175             0.27%    passed     82.93%
+  28  LIT2_Bgru_YakX_UP193             0.23%    passed     81.95%
+  29  LIT2_Bgru_YakX_UP199             0.23%    passed     87.51%
+  30  LIT2_Bgru_YakX_UP203             0.24%    passed     83.61%
+  31  LIT3_Bpri_P_England_GU985279     0.01%    passed     99.68%
+  32  LIT3_Bpri_P_Poland_JQ437479      0.01%    passed     99.10%
+  33  LIT3_Btau_P1a_Korea_DQ124389     0.01%    passed     99.34%
+  34  LIT3_Btau_P1a_LC537308           0.00%    passed     99.29%
+  35  LIT3_Btau_P1a_LC537309           0.00%    passed     99.14%
+  36  LIT3_Btau_P1a_LC537310           0.00%    passed     99.32%
+  37  LIT3_Btau_P1a_LC537311           0.00%    passed     99.32%
+  38  LIT3_Btau_P1a_LC537312           0.00%    passed     99.49%
+  39  LIT3_Btau_P1a_LC537313           0.00%    passed     99.25%
+  40  LIT3_Btau_P1a_LC537314           0.01%    passed     99.35%
+  41  LIT3_Btau_P1a_LC537315           0.00%    passed     99.32%
+  42  LIT3_Btau_P1a_LC537316           0.01%    passed     99.22%
+  43  LIT3_Btau_P1a_LC537317           0.00%    passed     99.34%
+  44  LIT4_Bpri_C_HH13C                0.02%    passed     99.13%
+  45  LIT4_Bpri_C_HT07C                3.10%    passed     95.00%
+  46  LIT4_Bpri_C_ST07C                1.23%    passed     95.23%
+  47  LIT4_Bpri_C_ST08C                0.08%    passed     99.21%
+  48  LIT4_Bpri_C_ST09C                0.01%    passed     99.18%
+  49  LIT4_Bpri_C_YGZ02C               0.79%    passed     99.82%
+  50  LIT4_Btau-Bpri_C_XH10C_hybrid    1.82%    passed     99.84%
+  51  LIT4_Btau_T1_NJ26C               0.00%    passed     99.49%
+  52  LIT4_Btau_T3_BY02C               0.07%    passed     99.92%
+  53  LIT4_Btau_T3_CNN13               0.01%    passed     99.69%
+  54  LIT4_Btau_T3_DSG04C              0.01%    passed     99.54%
+  55  LIT4_Btau_T3_DSQN19              0.00%    passed     99.49%
+  56  LIT4_Btau_T3_DSQN4               0.00%    passed     99.62%
+  57  LIT4_Btau_T3_NJ09C               0.00%    passed     99.67%
+  58  LIT4_Btau_T3_XH08C               0.77%    passed     99.71%
+  59  MOD_Bmut_yak_KM233417            0.13%    passed     81.30%
+  60  MOD_Bmut_yak_KR106993            3.37%    passed     87.11%
+  61  MOD_Bmut_yak_KY829451            3.37%    passed     89.23%
+  62  MOD_Bmut_yak_MK033130            2.34%    passed     77.74%
+  63  MOD_Bmut_yak_NC025563            0.13%    passed     81.30%
+  64  MOD_Btau_T3_OQ513044             0.00%    passed     99.27%
+  65  MOD_Btau_T3_OQ513045             0.00%    passed     99.49%
+  66  MOD_Btau_T3_OQ513046             0.00%    passed     99.50%
+  67  MOD_Btau_T3_OQ513047             0.00%    passed     99.15%
+  68  MOD_Btau_T3_OQ513048             0.00%    passed     99.32%
+  69  REF_Scaf_outgroup_NC020617       2.33%    passed     45.87%
+****  TOTAL                            1.98%  3 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: LIT3_Btau_P1a_LC537315 is identical to LIT3_Btau_P1a_LC537310 but kept for subsequent analysis
+NOTE: MOD_Bmut_yak_NC025563 is identical to MOD_Bmut_yak_KM233417 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.016 seconds
+Measuring multi-threading efficiency up to 96 CPU cores
+Increase to 10 rounds for branch lengths
+369 trees examined
+Threads: 1 / Time: 96.241 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -93822
+Threads: 2 / Time: 67.080 sec / Speedup: 1.435 / Efficiency: 72% / LogL: -93822
+Threads: 3 / Time: 55.899 sec / Speedup: 1.722 / Efficiency: 57% / LogL: -93822
+Threads: 4 / Time: 46.019 sec / Speedup: 2.091 / Efficiency: 52% / LogL: -93822
+Threads: 5 / Time: 42.166 sec / Speedup: 2.282 / Efficiency: 46% / LogL: -93822
+BEST NUMBER OF THREADS: 4
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -43889.912
+Optimal log-likelihood: -43889.627
+Rate parameters:  A-C: 2.66676  A-G: 58.40363  A-T: 2.64639  C-G: 1.05788  C-T: 73.83907  G-T: 1.00000
+Base frequencies:  A: 0.335  C: 0.259  G: 0.134  T: 0.272
+Proportion of invariable sites: 0.393
+Gamma shape alpha: 0.324
+Parameters optimization took 1 rounds (0.036 sec)
+Time for fast ML tree search: 0.569 seconds
+
+NOTE: ModelFinder requires 27 MB RAM!
+ModelFinder will test up to 88 DNA models (sample size: 16338 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         45032.038    143 90350.077    90352.620    91451.355
+  2  GTR+F+I       43930.236    144 88148.473    88151.052    89257.453
+  3  GTR+F+G4      43920.825    144 88129.650    88132.229    89238.630
+  4  GTR+F+I+G4    43889.388    145 88068.776    88071.391    89185.457
+  8  SYM+I+G4      44835.603    142 89955.207    89957.714    91048.784
+ 12  TVM+F+I+G4    43897.301    144 88082.603    88085.181    89191.582
+ 16  TVMe+I+G4     44942.427    141 90166.855    90169.327    91252.731
+ 20  TIM3+F+I+G4   43904.407    143 88094.814    88097.357    89196.093
+ 24  TIM3e+I+G4    44910.687    140 90101.373    90103.811    91179.548
+ 28  TIM2+F+I+G4   43888.124    143 88062.248    88064.791    89163.527
+ 32  TIM2e+I+G4    44834.863    140 89949.726    89952.164    91027.901
+ 36  TIM+F+I+G4    43903.481    143 88092.962    88095.505    89194.240
+ 40  TIMe+I+G4     44909.495    140 90098.990    90101.428    91177.165
+ 44  TPM3u+F+I+G4  43910.774    142 88105.549    88108.057    89199.126
+ 48  TPM3+I+G4     45017.001    139 90312.003    90314.406    91382.476
+ 52  TPM2u+F+I+G4  43895.947    142 88075.895    88078.403    89169.472
+ 56  TPM2+I+G4     44940.726    139 90159.451    90161.854    91229.925
+ 60  K3Pu+F+I+G4   43910.397    142 88104.793    88107.301    89198.371
+ 64  K3P+I+G4      45016.460    139 90310.921    90313.323    91381.394
+ 68  TN+F+I+G4     43902.493    142 88088.985    88091.493    89182.563
+ 72  TNe+I+G4      44908.441    139 90094.881    90097.284    91165.355
+ 76  HKY+F+I+G4    43910.054    141 88102.108    88104.580    89187.984
+ 80  K2P+I+G4      45016.084    138 90308.168    90310.536    91370.940
+ 84  F81+F+I+G4    47486.500    140 95252.999    95255.437    96331.174
+ 88  JC+I+G4       48313.423    137 96900.845    96903.179    97955.916
+Akaike Information Criterion:           TIM2+F+I+G4
+Corrected Akaike Information Criterion: TIM2+F+I+G4
+Bayesian Information Criterion:         TIM2+F+I+G4
+Best-fit model: TIM2+F+I+G4 chosen according to BIC
+
+All model information printed to /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.model.gz
+CPU time for ModelFinder: 824.540 seconds (0h:13m:44s)
+Wall-clock time for ModelFinder: 315.884 seconds (0h:5m:15s)
+Generating 1000 samples for ultrafast bootstrap (seed: 42)...
+
+NOTE: 27 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 0.804 / Estimate: 0.000, 0.114 / LogL: -43920.991
+Init pinv, alpha: 0.089, 0.804 / Estimate: 0.089, 0.147 / LogL: -43912.539
+Init pinv, alpha: 0.179, 0.804 / Estimate: 0.177, 0.183 / LogL: -43904.813
+Init pinv, alpha: 0.268, 0.804 / Estimate: 0.265, 0.226 / LogL: -43897.961
+Init pinv, alpha: 0.357, 0.804 / Estimate: 0.351, 0.284 / LogL: -43892.368
+Init pinv, alpha: 0.446, 0.804 / Estimate: 0.437, 0.368 / LogL: -43887.405
+Init pinv, alpha: 0.536, 0.804 / Estimate: 0.521, 0.512 / LogL: -43885.130
+Init pinv, alpha: 0.625, 0.804 / Estimate: 0.603, 0.788 / LogL: -43884.744
+Init pinv, alpha: 0.714, 0.804 / Estimate: 0.649, 1.109 / LogL: -43886.319
+Init pinv, alpha: 0.804, 0.804 / Estimate: 0.650, 1.127 / LogL: -43886.948
+Optimal pinv,alpha: 0.603, 0.788 / LogL: -43884.744
+
+Parameters optimization took 7.564 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00918946 secs using 415.1% CPU
+Computing ML distances took 0.009455 sec (of wall-clock time) 0.038412 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000351644 secs using 329.6% CPU
+Computing RapidNJ tree took 0.019648 sec (of wall-clock time) 0.031665 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -44175.856
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.529 second
+Computing log-likelihood of 98 initial trees ... 1.065 seconds
+Current best score: -43884.744
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -43884.732
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -43883.616
+Iteration 10 / LogL: -43883.632 / Time: 0h:5m:28s
+Iteration 20 / LogL: -43884.687 / Time: 0h:5m:31s
+Finish initializing candidate tree set (20)
+Current best tree score: -43883.616 / CPU time: 7.576
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -43956.648 / Time: 0h:5m:34s (0h:0m:47s left)
+Iteration 40 / LogL: -43884.293 / Time: 0h:5m:38s (0h:0m:35s left)
+Iteration 50 / LogL: -43918.585 / Time: 0h:5m:42s (0h:0m:28s left)
+Log-likelihood cutoff on original alignment: -43924.437
+Iteration 60 / LogL: -43883.821 / Time: 0h:5m:45s (0h:0m:21s left)
+Iteration 70 / LogL: -43929.838 / Time: 0h:5m:49s (0h:0m:15s left)
+Iteration 80 / LogL: -43890.147 / Time: 0h:5m:52s (0h:0m:10s left)
+Iteration 90 / LogL: -44401.465 / Time: 0h:5m:56s (0h:0m:5s left)
+Iteration 100 / LogL: -43959.740 / Time: 0h:5m:59s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -43924.417
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:6m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -43883.616
+2. Current log-likelihood: -43883.582
+Optimal log-likelihood: -43883.575
+Rate parameters:  A-C: 2.27345  A-G: 52.32174  A-T: 2.27345  C-G: 1.00000  C-T: 65.53894  G-T: 1.00000
+Base frequencies:  A: 0.335  C: 0.259  G: 0.134  T: 0.272
+Proportion of invariable sites: 0.602
+Gamma shape alpha: 0.779
+Parameters optimization took 2 rounds (0.074 sec)
+BEST SCORE FOUND : -43883.575
+Creating bootstrap support values...
+Split supports printed to NEXUS file /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.splits.nex
+Total tree length: 0.521
+
+Total number of iterations: 103
+CPU time used for tree search: 142.552 sec (0h:2m:22s)
+Wall-clock time used for tree search: 37.308 sec (0h:0m:37s)
+Total CPU time used: 998.428 sec (0h:16m:38s)
+Total wall-clock time used: 361.368 sec (0h:6m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.splits.nex...
+69 taxa and 520 splits.
+Consensus tree written to /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.contree
+Reading input trees file /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.contree
+Log-likelihood of consensus tree: -43884.288
+
+Analysis results written to: 
+  IQ-TREE report:                /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.iqtree
+  Maximum-likelihood tree:       /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.treefile
+  Likelihood distances:          /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.splits.nex
+  Consensus tree:                /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.contree
+  Screen log file:               /mnt/disk2/srtp2024/LIM/IVPP/analysis/05_phylo/final_tree.log
+
+Date and Time: Sun Jun 21 00:58:38 2026

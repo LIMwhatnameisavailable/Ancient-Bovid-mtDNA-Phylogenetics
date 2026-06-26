@@ -1,0 +1,55 @@
+# Step 2a · BLAST 物种鉴定 — 网页版操作说明
+# 时间: 2026-06-18
+# 目标: 对温江多 18 条古代样本进行 mtDNA 物种归属推断（线粒体谱系）
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 操作步骤
+
+### 1. 上传
+  - 网址: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+  - 点击 "Nucleotide BLAST"
+  - 上传文件: 03_blast/wenjiangduo_for_blast.fasta
+    （也可复制粘贴整条 FASTA 序列，每条序列 BLAST 会分别输出结果）
+
+### 2. 参数设置
+  Job Title:     Wenjiangduo_18seqs_Bovidae
+  Database:      Nucleotide collection (nt)
+  Organism:      Bovidae (taxid:9895)
+    → 输入 "Bovidae" 后选择自动补全的 "Bovidae (taxid:9895)"
+  Program Selection:  Highly similar sequences (megablast)
+    → 对线粒体全基因组，megablast 足够
+  Expect threshold:   10（默认）
+  Word size:          28（默认）
+  Max target seqs:    100
+  Format:             Hit Table (CSV)
+
+### 3. 提交
+  - 点击 "BLAST" 按钮
+  - 等待运行完成（通常 1-5 分钟，18 条序列可能稍长）
+  - BLAST 页面会刷新显示进度
+
+### 4. 下载结果
+  - 运行完成后，页面顶部有 "Download All" 下拉菜单
+  - 选择 "Hit Table (CSV)" → 下载得到一个 .csv 文件
+  - 重命名为 results.csv，保存至:
+    analysis/03_blast/results.csv
+  - 确认文件中包含以下列:
+    query acc.ver, subject acc.ver, % identity, alignment length,
+    mismatches, gap opens, q. start, q. end, s. start, s. end,
+    evalue, bit score
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 注意事项
+
+  ⚠️ 禁止使用 blastn -remote 命令行模式（CLAUDE.md 禁止事项 #2）
+  ⚠️ 请勿修改 03_blast/wenjiangduo_for_blast.fasta 文件内容
+  ⚠️ 下载后请确认 results.csv 行数 ≥ 18 行（至少每条序列 1 个 hit）
+      （实际因为多条序列可能有多个 BLAST hit，行数会更多）
+
+## 后续步骤
+  得到 results.csv 后，通知 CC 运行 Step 2b（解析脚本）
+  解析内容包括：
+    - 先验检查：Z9863→Bos taurus，Z9867→Bos mutus
+    - 层次 A 不一致候选：pident<99% 或 init_species 含"？"
+    - 输出：03_blast/species_summary.csv
+           03_blast/inconsistency_candidates.csv

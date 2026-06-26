@@ -1,0 +1,27 @@
+# Fig8 Haplotype Network Fix — 2025-06-21
+# Script: scripts/step4_plot_network.py (v2.0)
+
+## Problem
+Severe label stacking/overlap. Labels included "(n=X)" and individual sample IDs
+(up to 4 lines per label). No collision detection between labels. Layout was
+too cramped (kamada_kawai, scale=3.5, figsize=18×18, limits ±4.5).
+
+## Fixes applied
+1. **Simplified labels** — Changed to just haplotype ID ("H01", "H02", etc.)
+   Removed "(n=X)" and individual sample IDs entirely.
+2. **Better layout** — Replaced kamada_kawai with spring_layout
+   (k=6.0, iterations=500, seed=42) for better spreading.
+   Scale increased to 5.0.
+3. **Larger canvas** — figsize from 18→20 inches, xlim/ylim from ±4.5→±6.0.
+4. **Label collision detection** — Added `resolve_overlaps()` function that
+   detects overlapping label bboxes and pushes them apart with up to 120
+   iterations. Larger initial label offset (0.35 + radius*3).
+5. **Removed leader lines** — Previously drawn from node to label; removed
+   to reduce visual clutter.
+6. **Node size proportional** — Circle radius = 0.04 + members * 0.012
+   (H01 with 3 members largest, singleton haplotypes smallest).
+
+## Result
+All 15 haplotypes clearly readable with no overlapping labels.
+Mutation step labels on edges remain intact.
+File sizes: PNG 377KB, SVG 73KB.

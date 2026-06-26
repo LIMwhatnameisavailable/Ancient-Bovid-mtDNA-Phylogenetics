@@ -1,0 +1,33 @@
+DONE: Step 3 Remove Low-Quality (fig3_step3_remove_lowQ)
+Date: 2026-06-21 13:30:01
+
+Purpose: Remove 6 low-quality sequences and rebuild Step 3 tree
+
+Removed sequences:
+  WJD low coverage / QC caution: Z9853, Z9859, Z9864, Z9865
+  LIT2 lowQ reference: LIT2_Bgru_YakX_AG018_lowQ, LIT2_Bgru_YakX_AG028_lowQ
+
+Input alignment: 04_align/remove_lowQ_aln.fasta (from final_aln.fasta minus 6 seqs)
+After gap filter: 04_align/remove_lowQ_trimmed.fasta (63 seqs, 16338 bp)
+
+Best model (IQ-TREE2 BIC): TIM2+F+I+G4
+
+IQ-TREE2 command:
+  iqtree2 -s remove_lowQ_trimmed.fasta -m TEST -B 1000 -T AUTO
+    -o REF_Scaf_outgroup_NC020617 --prefix remove_lowQ_tree --seed 42 -redo
+
+Key findings:
+  Z9863 (prior=cattle): YAK clade (BS=93) → DISCORDANT confirmed
+  Z9867 (prior=yak): CATTLE clade (BS=100) → DISCORDANT confirmed
+  Both discordant results consistent with original Step 3 tree
+  Z9850+Z9867 are sister tips (BS=99)
+
+Output files:
+  05_phylo/remove_lowQ_tree.treefile
+  05_phylo/remove_lowQ_tree.contree
+  05_phylo/remove_lowQ_tree.iqtree
+  09_figures/fig3_step3_remove_lowQ.png + .svg
+  logs/phylo_inconsistency_remove_lowQ.txt
+  logs/step3_remove_lowQ.log
+
+DONE

@@ -1,0 +1,19 @@
+sample_id,top_species,top_accession,top_title,common_name,taxid,query_cover,percent_identity,evalue,max_score,total_score,acc_len,inferred_taxon,confidence,qc_note
+K0909,Bos taurus,MT576802.1,"Bos taurus isolate SRR934400 mitochondrion, complete genome",domestic cattle,9913,100%,99.94%,0.0,30125,30125,16340,Bos_taurus_group (cattle),HIGH,
+K0914,Bos grunniens,OK375573.1,"Bos grunniens voucher Gannan23 clone GN23 mitochondrion, complete genome",domestic yak,30521,99%,99.95%,0.0,29538,29748,16322,Bos_mutus_group (yak),HIGH,
+Z9850,Bos taurus,MZ901389.1,"Bos taurus isolate BHB_103 haplogroup T3 mitochondrion, complete genome",domestic cattle,9913,100%,99.98%,0.0,30153,30153,16338,Bos_taurus_group (cattle),HIGH,形态鉴定='牛？'(UNCERTAIN)
+Z9851,Bos taurus,MT576782.1,"Bos taurus isolate Mishima01 mitochondrion, complete genome",domestic cattle,9913,100%,99.97%,0.0,30147,30147,16339,Bos_taurus_group (cattle),HIGH,
+Z9852,Bos taurus,MN714184.1,"Bos taurus isolate ND7 mitochondrion, complete genome",domestic cattle,9913,100%,99.98%,0.0,30155,30155,16338,Bos_taurus_group (cattle),HIGH,
+Z9853,Bos grunniens,OK375844.1,"Bos grunniens voucher Zhongdian20 clone ZD20 mitochondrion, complete genome",domestic yak,30521,72%,95.10%,0.0,1592,20368,16323,Bos_mutus_group (yak),LOW,"pident=95.10% (<99%) | query_cover=72% (<80%) | LOW coverage (2.1×), 30% N bases"
+Z9854,Bos grunniens,OK375689.1,"Bos grunniens voucher Muli14 clone ML14 mitochondrion, complete genome",domestic yak,30521,100%,99.99%,0.0,30066,30066,16323,Bos_mutus_group (yak),HIGH,
+Z9855,Bos grunniens,OK375509.1,"Bos grunniens voucher Bazhou9 clone BZ9 mitochondrion, complete genome",domestic yak,30521,99%,99.70%,0.0,19256,29636,16323,Bos_mutus_group (yak),HIGH,
+Z9856,Bos grunniens,OK375859.1,"Bos grunniens voucher Sunan9 clone SN9 mitochondrion, complete genome",domestic yak,30521,99%,99.73%,0.0,17032,29694,16323,Bos_mutus_group (yak),HIGH,
+Z9857,Bos taurus,MT576746.1,"Bos taurus isolate DJ47 mitochondrion, complete genome",domestic cattle,9913,100%,99.87%,0.0,30090,30090,16339,Bos_taurus_group (cattle),HIGH,形态鉴定='牛？'(UNCERTAIN)
+Z9858,Bos grunniens,OP598192.1,"Bos grunniens mitochondrion, complete genome",domestic yak,30521,100%,99.48%,0.0,29715,29715,16323,Bos_mutus_group (yak),HIGH,
+Z9859,Bos taurus,OR766843.1,"Bos taurus isolate BG3_c37 mitochondrion, complete genome",domestic cattle,9913,94%,97.09%,0.0,8246,26980,16340,Bos_taurus_group (cattle),LOW,pident=97.09% (<99%) | query_cover=94% (<95%) | 形态鉴定='牛？'(UNCERTAIN)
+Z9860,Bos taurus,MT576802.1,"Bos taurus isolate SRR934400 mitochondrion, complete genome",domestic cattle,9913,100%,99.82%,0.0,29385,29925,16340,Bos_taurus_group (cattle),HIGH,
+Z9861,Bos taurus,MN200883.1,"Bos taurus isolate CDY333 mitochondrion, complete genome",domestic cattle,9913,99%,99.57%,0.0,29263,29661,16338,Bos_taurus_group (cattle),HIGH,
+Z9863,Bos grunniens,OK375835.1,"Bos grunniens voucher Zhongdian11 clone ZD11 mitochondrion, complete genome",domestic yak,30521,100%,99.83%,0.0,29632,29910,16323,Bos_mutus_group (yak),DISCORDANT,⚠ PRIOR_CATTLE but BLAST→yak; 形态-母系谱系不一致候选
+Z9864,Bos taurus,EU177827.1,"Bos taurus isolate Bos31 mitochondrion, complete genome",domestic cattle,9913,97%,99.59%,0.0,8890,28926,16341,Bos_taurus_group (cattle),MEDIUM,LOW coverage (10.9×) | 形态鉴定='牛？'(UNCERTAIN)
+Z9865,Bos taurus,OQ512990.1,"Bos taurus isolate DCD113.2 mitochondrion, complete genome",domestic cattle,9913,95%,96.27%,0.0,3347,27364,16340,Bos_taurus_group (cattle),LOW,pident=96.27% (<99%)
+Z9867,Bos taurus,MZ901641.1,"Bos taurus isolate CGKT_2 haplogroup T3 mitochondrion, complete genome",domestic cattle,9913,100%,98.92%,0.0,29508,29508,16340,Bos_taurus_group (cattle),DISCORDANT,pident=98.92% (<99%) | ⚠ PRIOR_YAK but BLAST→cattle; 形态-母系谱系不一致候选

@@ -1,0 +1,15 @@
+accession,new_id,species,source_type
+NC_006380.1,Bos_mutus_NC006380,Bos mutus (yak),core
+NC_006853.1,Bos_taurus_NC006853,Bos taurus (cattle),core
+NC_006295.1,Bubalus_bubalis_NC006295,Bubalus bubalis (water buffalo),core
+NC_005971.1,Bos_indicus_NC005971,Bos indicus (zebu),core
+NC_025563.1,Bos_mutus_NC_025563,Bos mutus (yak),panel_modern
+MK033130.1,Bos_mutus_MK033130,Bos mutus (yak),panel_modern
+KY829451.1,Bos_mutus_KY829451,Bos mutus (yak),panel_modern
+KR106993.1,Bos_mutus_KR106993,Bos mutus (yak),panel_modern
+KM233417.1,Bos_mutus_KM233417,Bos mutus (yak),panel_modern
+OQ513048.1,Bos_taurus_OQ513048,Bos taurus (cattle),panel_modern
+OQ513047.1,Bos_taurus_OQ513047,Bos taurus (cattle),panel_modern
+OQ513046.1,Bos_taurus_OQ513046,Bos taurus (cattle),panel_modern
+OQ513045.1,Bos_taurus_OQ513045,Bos taurus (cattle),panel_modern
+OQ513044.1,Bos_taurus_OQ513044,Bos taurus (cattle),panel_modern

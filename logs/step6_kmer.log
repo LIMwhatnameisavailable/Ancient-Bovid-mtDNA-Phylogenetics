@@ -1,0 +1,28 @@
+DONE: Step 6 k-mer ML Classifier
+Date: 2026-06-21
+Duration: < 1 min
+
+Method:
+  k=4 (256-dimension k-mer frequency vectors)
+  Training: 10 MOD reference sequences (5 yak + 5 cattle T3)
+  Testing: 18 Wenjiangduo samples
+  Classifiers: Random Forest (200 trees) + SVM (RBF kernel)
+
+Results:
+  RF vs BLAST agreement: 18/18 (100%)
+  SVM vs BLAST agreement: 12/18 (67%)
+  RF-SVM agreement: 12/18 (67%)
+
+  SVM disagreements (6 samples classified as yak by SVM vs cattle by BLAST/RF):
+    Z9859, Z9860, Z9861, Z9864, Z9865, Z9867
+    → Possible cause: small training set (10 samples for 256-dim features)
+       leads to SVM overfitting
+
+Prior checks:
+  Z9863 (prior=cattle): RF=yak, SVM=yak, BLAST=yak → ALL THREE agree on yak
+  Z9867 (prior=yak): RF=cattle, SVM=yak, BLAST=cattle → RF+BLAST agree on cattle
+
+Output:
+  08_ml/kmer_classification_result.csv
+
+DONE

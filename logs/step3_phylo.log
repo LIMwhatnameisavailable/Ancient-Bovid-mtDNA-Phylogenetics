@@ -1,0 +1,42 @@
+DONE: Step 3 Final Phylogenetic Tree
+Date: 2026-06-21 00:58
+Duration: 0h:6m:1s (wall-clock)
+
+Input files:
+  00_raw/wenjiangduo_18seqs.fasta (18 sequences)
+  02_ref/renamed/all_combined.fa (51 reference sequences)
+  Total: 69 sequences
+
+Alignment:
+  MAFFT --localpair --maxiterate 1000 --thread 8
+  Raw: 17315 bp → Filtered: 16338 bp (dropped 977 high-missing columns)
+
+Model selection: IQ-TREE2 -m TEST (BIC)
+  Best model: TIM2+F+I+G4
+  Written to: logs/best_model.txt
+
+IQ-TREE2:
+  /mnt/disk2/srtp2024/miniconda3/bin/iqtree2
+  -s final_trimmed.fasta -m TEST -B 1000 -T AUTO
+  -o "REF_Scaf_outgroup_NC020617"
+  CPU time: 998 sec (16m38s)
+  Wall time: 361 sec (6m1s)
+
+Tree topology:
+  Bovini root → 2 outgroups + 1 Bos clade (BS=100)
+    Bos clade → Cattle subclade (BS=100, 45 tips) + Yak subclade (BS=92, 22 tips)
+
+Key findings:
+  Z9863 (prior=cattle): YAK subclade (BS=92) → DISCORDANT confirmed
+  Z9867 (prior=yak): CATTLE subclade (BS=100) → DISCORDANT confirmed
+  Both discordant results are consistent with Step 2c identification tree
+
+Output files:
+  05_phylo/final_tree.treefile
+  05_phylo/final_tree.contree
+  05_phylo/final_tree.iqtree
+  09_figures/fig3_step3_tree.png + .svg
+  logs/best_model.txt
+  logs/phylo_inconsistency_check.txt
+
+DONE

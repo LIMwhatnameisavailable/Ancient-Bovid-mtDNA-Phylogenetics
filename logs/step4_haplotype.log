@@ -1,0 +1,65 @@
+DONE: Step 4 Haplotype Analysis
+Date: 2026-06-21 13:50
+Scripts: scripts/step4_haplotype.py + scripts/step4_to_nexus.py
+
+Input:
+  Alignment: 04_align/final_aln.fasta (69 seqs × 17315 bp)
+  WJD samples: 18 sequences
+  Excluded from stats: Z9853 (2.1×), Z9864 (10.9×) — LOW coverage
+
+Gap/ambig filtering:
+  Raw alignment:    17315 bp
+  Column filter:    removed columns containing gap(-) / N / ambiguity codes
+  Cleaned length:   10668 bp (6647 columns removed)
+  Variable sites:   575 (biallelic only, among 16 included samples)
+
+Haplotype results (16 included samples):
+  Total haplotypes: 13
+  Haplotype diversity (Hd): 0.9667
+  Nucleotide diversity (π): 0.025600
+
+Haplotype sharing by site:
+  西南塔遗址独有:  2 个 (H03=K0909, H04=K0914)
+  主遗址独有:     11 个
+  共享:           0 个
+  → 两个子遗址之间无共享单倍型
+
+Haplotype details:
+  H01 (size 3): Z9854, Z9856, Z9858 — 主遗址, largest
+  H02 (size 2): Z9850, Z9867 — 主遗址, Z9867=已知discordant(yak→cattle mtDNA)
+  All others (H03-H15 except H07/H14): singletons
+  H07 = Z9853 (LOW, excluded)
+  H14 = Z9864 (LOW, excluded)
+
+Output files:
+  06_haplo/haplotype_assignment.csv
+  06_haplo/haplotype_details.txt
+  06_haplo/popart_input.nex
+  06_haplo/diversity_by_clade.csv
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Diversity by mtDNA lineage (2026-06-21 recalc)
+
+⚠️ 全样本统一π=0.0256 不可直接报告（混合谱系差异造成的假高值）
+   正确做法：按mtDNA谱系分组分别计算
+
+Yak group (n=6): Z9854, Z9855, Z9856, Z9858, Z9863, K0914
+  清理后位点: 15,879 bp
+  变异位点:    98
+  单倍型:      6 (全部unique → Hd=1.0000)
+  Hd = 1.000000
+  π  = 0.002120 (≈0.21%)  ← 牦牛谱系内典型多样性
+
+Cattle group (n=10): K0909, Z9850, Z9851, Z9852, Z9857, Z9859,
+                      Z9860, Z9861, Z9865, Z9867
+  清理后位点: 14,385 bp
+  变异位点:    31
+  单倍型:      9 (Z9850+Z9867共享H02 → Hd=0.9778)
+  Hd = 0.977778
+  π  = 0.000582 (≈0.058%)  ← T3谱系低多样性，与东亚黄牛瓶颈一致
+
+── 分组说明 ──
+  BLAST确认: Z9859=Bos taurus, Z9865=Bos taurus → 归入普通牛组
+  Z9853/Z9864 (LOW覆盖度) 不参与群体统计
+
+DONE — No errors

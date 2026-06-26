@@ -1,0 +1,63 @@
+Step 4 Haplotype Details
+Date: 2026-06-21 13:50
+Cleaned alignment: 10668 bp (removed gap/N/ambig columns)
+============================================================
+
+H01: 3 sequences
+  Members: Z9854|Z9856|Z9858
+  In stats: Z9854|Z9856|Z9858
+
+H02: 2 sequences
+  Members: Z9850|Z9867
+  In stats: Z9850|Z9867
+
+H03: 1 sequences
+  Members: K0909
+  In stats: K0909
+
+H04: 1 sequences
+  Members: K0914
+  In stats: K0914
+
+H05: 1 sequences
+  Members: Z9851
+  In stats: Z9851
+
+H06: 1 sequences
+  Members: Z9852
+  In stats: Z9852
+
+H07: 1 sequences
+  Members: Z9853
+
+H08: 1 sequences
+  Members: Z9855
+  In stats: Z9855
+
+H09: 1 sequences
+  Members: Z9857
+  In stats: Z9857
+
+H10: 1 sequences
+  Members: Z9859
+  In stats: Z9859
+
+H11: 1 sequences
+  Members: Z9860
+  In stats: Z9860
+
+H12: 1 sequences
+  Members: Z9861
+  In stats: Z9861
+
+H13: 1 sequences
+  Members: Z9863
+  In stats: Z9863
+
+H14: 1 sequences
+  Members: Z9864
+
+H15: 1 sequences
+  Members: Z9865
+  In stats: Z9865
+

@@ -1,0 +1,27 @@
+# fig0_workflow.log
+# Generated: 2026-06-21 20:34:11
+# Script: inline (CC)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Input sources:
+  - CLAUDE.md / ANALYSIS_STEPS.md
+  - 02_ref/README.md (v2.0, 51-seq panel)
+  - logs/step0_prepare.log
+  - logs/step3_phylo.log
+  - logs/step4_haplotype.log
+  - 09_figures/PLOT_GUIDE.md
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Figure specs:
+  - Size: 12×9 in (4:3)
+  - DPI: 300 (PNG), vector (SVG)
+  - Font: Times New Roman → Georgia → DejaVu Serif
+  - Layout: 6 equal-width boxes, top-to-bottom
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Box contents:
+  Box1 (Data Input): 18 WJD mtDNA, 16,322-16,341 bp, 2 sub-sites
+  Box2 (QC): HIGH=8, MID=8, LOW=2, WARN=3
+  Box3 (Species ID Step1): BLAST(7Y/11C) + ML tree(BS=100); discordant identified
+  Box4 (Phylo Step2): 69 seq, TIM2+F+I+G4; 51-ref panel table; K0914→YakX BS=99
+  Box5 (Haplotype Step3): 13 hap, Hd=0.967; Yak π=0.21%, Cattle π=0.058%
+  Box6 (Conclusion): 3 core findings, amber fill
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DONE

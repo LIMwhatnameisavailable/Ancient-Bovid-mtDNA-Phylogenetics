@@ -1,0 +1,154 @@
+# logs/figures_revision.log
+# 主绘图脚本: scripts/plot_figures_1to7.py
+# 首次生成: 2026-06-19
+# 当前版本: v2.4
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 脚本概览
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- 文件: scripts/plot_figures_1to7.py (872 行, 末次修改 2026-06-19 23:01)
+- 数据依赖:
+  - 01_qc/qc_report.csv (QC指标)
+  - logs/sample_metadata.csv (样本元数据)
+  - 03_blast/species_summary.csv (BLAST物种归属)
+  - 04_tree_identification/sample_grouping.csv (mtDNA谱系分组)
+  - 04_tree_identification/id_tree.treefile (IQ-TREE2 ML树)
+- 环境: LIM_env (matplotlib 'Agg' 后端, Bio.Phylo)
+- 输出: 09_figures/ 同时生成 300dpi PNG + SVG (每张 ~2 文件)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 已生成图片状态
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+### Fig1: fig1_qc_coverage (覆盖度分层柱状图)
+- 函数: fig1_qc_coverage()
+- 数据: meta.csv → coverage 列, 覆盖度降序排列
+- 设计: HIGH(天蓝≥100×) / MID(青绿20–99×) / LOW(灰<20×) 三色
+- 阈值线: 100× (琥珀黄 --) / 20× (灰色 :)
+- 标注: 不一致候选样本柱上方红色 "*ID", LOW覆盖样本标覆盖度值+ "×"
+- x轴刻度: Z9863/Z9864 轴标签加星号
+- 图例: 右上角, 5项 (HIGH / MID / LOW + 2条阈值线)
+- 状态: ✅ 稳定
+
+### Fig2: fig2_species_composition (物种鉴定组成)
+- 函数: fig2_species_composition()
+- 左图 (饼图): Yak(紫#6A4C93) / Cattle(琥珀黄#E9C46A) 占比, 图例正下方
+- 右图 (水平条形): BLAST pident%, 样本升序排列, xlim=94–100.55
+  - 不一致候选: 红框 (edgecolor=#E64B35)
+  - QC caution (Z9853/Z9859/Z9864/Z9865): 灰色柱体
+  - 正常: 按mtDNA谱系着色
+- 参考线: 99% (琥珀黄 --)
+- 图例: 右下角4项
+- 状态: ✅ 稳定
+
+### Fig3: fig3_id_tree (ML鉴定树)
+- 函数: fig3_id_tree()
+- 输入: id_tree.treefile (IQ-TREE2), 去除水牛外群后展示
+- 图幅: (12, 9), cladogram (枝长=1), xlim右侧扩展1.04倍
+- BS支持值: ≥70 显示 (灰色斜体12pt), <70 隐藏
+- 标签着色: 牦牛紫 #6A4C93 / 普通牛琥珀黄 #8A6A16 / 不一致候选朱红 #E64B35
+- 后缀: [*]=不一致候选(红色加粗), [+]=QC caution(灰色加粗), [?]=形态不确定
+- 图例: 底部单行5列, bbox_to_anchor=(0.5, 0.092)
+- 脚注: "Cladogram topology shown for mtDNA clade assignment; branch lengths are not proportional."
+- 状态: ✅ 稳定
+
+### Fig4: fig4_quality_scatter (覆盖度 vs N% 散点图)
+- 函数: fig4_coverage_vs_n()
+- 数据: qc.csv × meta.csv, x轴 log scale
+- 散点: 按mtDNA谱系着色 (紫=牦牛 / 琥珀黄=普通牛)
+- 参考线: 20× (灰 :), 100× (琥珀黄 --), 5% N% (红 :)
+- 6个重点样本引导线标注 (fixed label_positions避免重叠):
+  - Z9853(2.6,27.5) / Z9864(8.9,6.4) / Z9859(30,10)
+  - Z9865(32,5.6) / Z9863(70,3.4) / Z9867(130,3.8)
+- 标签: 不一致候选红色, QC caution 灰色, 带白底圆角框
+- 图例: 右上角5项
+- 状态: ✅ 稳定
+
+### Fig5: fig5_site_comparison (子遗址对比)
+- 函数: fig5_site_comparison()
+- 左: 西南塔遗址 (n=2), 右: 主遗址 (n=16)
+- 每图 Yak / Cattle 两柱 (紫/琥珀黄), 柱顶标数量
+- 西南塔标题附加 "(descriptive comparison only)" (n太小)
+- 脚注: "Discordant candidates are listed in Fig7"
+- 图例: 底部居中2列
+- 状态: ✅ 稳定
+
+### Fig6: fig6_blast_identity (BLAST匹配度分布)
+- 函数: fig6_blast_identity()
+- 左图 (直方图): bin=0.5%, 牦牛/普通牛分色叠加, 99%阈值线
+- 右图 (点图): 样本升序排列, 99%+95%两条参考线
+  - 不一致候选标注 "[*]"+红色, QC caution标注 "[+]"+灰色
+- 状态: ✅ 稳定
+
+### Fig7: fig7_morphology_vs_mtdna (形态鉴定×mtDNA矩阵图)
+- 函数: fig7_morphology_vs_mtdna()
+- 4列(Bovine/Cattle/Yak/Uncertain) × 2行(Yak mtDNA/Cattle mtDNA)
+- 每格: n计数 + ID列表
+- 背景色: 不一致候选=浅红+红框 / 形态不确定=浅黄 / concordant=浅绿 / 无数据=近白
+- Z9863/Z9867 红色加粗 + 星号
+- 图例: 底部2×2, bbox_to_anchor=(0.5, -0.3)
+- 状态: ✅ 稳定
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 配色映射 (来源: PLOT_GUIDE.md §2.1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+| 变量名 | 色值 | 用途 |
+|--------|------|------|
+| ancient_wjd_main | #4A90D9 (天蓝) | 主遗址HIGH覆盖样本 |
+| ancient_wjd_tower | #2A9D8F (青绿) | 西南塔遗址/MID覆盖 |
+| modern_tibet_yak | #1A3A5C (深蓝) | 现代西藏牦牛 |
+| wild_yak | #6A4C93 (深紫) | 野牦牛/mtDNA牦牛支系 |
+| modern_cattle | #E9C46A (琥珀黄) | 现代普通牛/mtDNA普通牛支系 |
+| hybrid_candidate | #E64B35 (朱红) | 不一致候选(Z9863/Z9867) |
+| low_coverage | #AAAAAA (中灰) | LOW覆盖/QC caution |
+| threshold | #E9C46A (琥珀黄) | 参考阈值线 |
+| prior_cattle | #E9C46A (琥珀黄) | Z9863先验标记 |
+| prior_yak | #6A4C93 (深紫) | Z9867先验标记 |
+| text_primary | #333333 | 主要文字 |
+| text_secondary | #666666 | 次要文字/脚注 |
+| error | #E64B35 (朱红) | 错误/警告标注 |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 修订记录
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+v2.4 (2026-06-19)
+  - Fig7: 确认 morph_order=['Bovine','Cattle','Yak','Uncertain'] 正确映射
+  - Fig7: 仅 discordant 格加红框 (discordant_boxes 列表), 非全图加框
+  - Fig7: 图例添加 'Bovine morphology' 浅蓝色标注
+  - 配色命名整理: hybrid_candidate + error 分离, 语义化重命名
+
+v2.3 (2026-06-19)
+  - Fig3: 去除 Bubalus 外群后展示 (prune)
+  - Fig3: 枝长改为1 (cladogram), xlim扩展1.04倍防遮挡
+  - Fig3: 图例5项并排底部, 脚注说明枝长非比例
+  - Fig4: 标签位置固定 (label_positions dict), 箭头直连接
+
+v2.2 (2026-06-19)
+  - Fig4: 6个重点样本独立偏移方向避免重叠
+  - Fig4: 移除 "Reference sequences" 图例项
+  - Fig5: 删除有bug的 discordant 标注逻辑, 统一用脚注指向 Fig7
+
+v2.1 (2026-06-19)
+  - Fig1: 图例包含20×和100×两条阈值线
+  - Fig1: Z9863/Z9867 x轴标签显示全名加星号
+  - Fig1: Discordant样本条上方标 *ID, LOW覆盖样本标 "×"
+  - Fig2: 饼图无饼边标签, 图例框位于饼正下方
+  - Fig2: 条形图 xlim=94–100.55, 99%阈值线图例右下角
+  - Fig2: 标注统一用"→"短格式
+  - Fig2: 低质量样本灰色显示附带mtDNA谱系信息
+
+v2.0 (2026-06-19)
+  - Fig3: 图幅 14×14 → (12,9), 右边距充足
+  - Fig3: 仅显示 BS≥70, Tip按mtDNA谱系着色
+  - Fig7: 从 ax.table 重构为 4×2 矩阵 tile heatmap
+
+v1.0 (2026-06-19)
+  - 首次完整生成: Fig1–Fig7 全部7张图
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 状态
+  DONE — 全部7张图均已稳定生成。后续修改在本文件追加记录。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

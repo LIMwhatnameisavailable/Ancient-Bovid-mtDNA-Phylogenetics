@@ -1,0 +1,50 @@
+# Step 2b · BLAST 结果解析 — 操作日志
+# 时间: 2026-06-19 18:31
+# 解析: CC (Python script)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 输入
+  HitTable:     /mnt/disk2/srtp2024/LIM/IVPP/analysis/03_blast/blast-HitTable/  — 18 个 CSV
+  Descriptions: /mnt/disk2/srtp2024/LIM/IVPP/analysis/03_blast/blast-DescriptionsTable/  — 18 个 CSV
+
+## 输出
+  1. /mnt/disk2/srtp2024/LIM/IVPP/analysis/03_blast/species_summary.csv
+  2. /mnt/disk2/srtp2024/LIM/IVPP/analysis/03_blast/discordant_or_low_confidence_candidates.csv
+
+## 关键指标
+  样品总数: 18
+  牦牛谱系 (Bos mutus/grunniens): 7 条
+    K0914 — 99.95% id, 99% cov
+    Z9853 — 95.10% id, 72% cov
+    Z9854 — 99.99% id, 100% cov
+    Z9855 — 99.70% id, 99% cov
+    Z9856 — 99.73% id, 99% cov
+    Z9858 — 99.48% id, 100% cov
+    Z9863 — 99.83% id, 100% cov
+  普通牛谱系 (Bos taurus): 11 条
+    K0909 — 99.94% id, 100% cov
+    Z9850 — 99.98% id, 100% cov
+    Z9851 — 99.97% id, 100% cov
+    Z9852 — 99.98% id, 100% cov
+    Z9857 — 99.87% id, 100% cov
+    Z9859 — 97.09% id, 94% cov
+    Z9860 — 99.82% id, 100% cov
+    Z9861 — 99.57% id, 99% cov
+    Z9864 — 99.59% id, 97% cov
+    Z9865 — 96.27% id, 95% cov
+    Z9867 — 98.92% id, 100% cov
+  不一致候选 (DISCORDANT): 2 条
+    Z9863: ⚠ PRIOR_CATTLE but BLAST→yak; 形态-母系谱系不一致候选
+    Z9867: pident=98.92% (<99%) | ⚠ PRIOR_YAK but BLAST→cattle; 形态-母系谱系不一致候选
+  低置信度: 3 条
+    Z9853: pident=95.10% (<99%) | query_cover=72% (<80%) | LOW coverage (2.1×), 30% N bases
+    Z9859: pident=97.09% (<99%) | query_cover=94% (<95%) | 形态鉴定='牛？'(UNCERTAIN)
+    Z9865: pident=96.27% (<99%)
+
+## 先验检查
+  Z9863 形态=普通牛 → BLAST 归属: Bos_mutus_group (yak)
+  Z9867 形态=牦牛 → BLAST 归属: Bos_taurus_group (cattle)
+
+## 状态
+  DONE
