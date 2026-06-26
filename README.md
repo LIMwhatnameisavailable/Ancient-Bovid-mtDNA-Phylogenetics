@@ -243,6 +243,12 @@ Reference sequences were compiled from the following publications:
 
 ---
 
+## 🙏 Acknowledgements
+
+We thank the research team at the **Institute of Vertebrate Paleontology and Paleoanthropology (IVPP), Chinese Academy of Sciences** for providing the ancient bovid aDNA sequence data from the Wenjiangduo site and for the technical guidance on zooarchaeological interpretation that shaped the analytical framework of this project.
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License.
